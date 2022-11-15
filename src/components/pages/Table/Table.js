@@ -30,6 +30,7 @@ const Table = ({id}) => {
 
   const handleUpdateTable = event => {
     event.preventDefault();
+    navigate('/');
     dispatch(
       editTable({
         id,
@@ -39,7 +40,6 @@ const Table = ({id}) => {
         bill: parseInt(bill),
       })
     );
-    navigate('/');
   };
 
   return (

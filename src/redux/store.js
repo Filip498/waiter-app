@@ -9,11 +9,11 @@ const subreducers = {
   statuses: statusesReducer,
 };
 
-const reducer = combineReducers(subreducers);
+const reducers = combineReducers(subreducers);
 
 const store = createStore(
     //referencja do funkcji odpowiedzialnej za modyfikacje magazynu
-    reducer,
+    reducers,
     //wskazanie danych startowych magazynu
     initialState,
     compose(
